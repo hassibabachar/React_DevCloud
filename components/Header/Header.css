@@ -1,0 +1,73 @@
+header {
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+}
+header .container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 5rem;
+}
+header .logo img{
+  cursor: pointer;
+  width: 15rem;
+  height: 20rem;
+}
+header nav{
+  display: flex;
+  align-items: center;
+  height: 100%;
+} 
+header nav ul {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+header nav ul li {
+  width: 6.5rem;
+  cursor: pointer;
+  color: var(--grey-color);
+  font-size: 18px;
+  font-weight: 400;
+}
+.links a li.active{
+  color: var(--third-color);
+}
+header nav ul li:hover{
+  color: var(--secondary-color);
+  transition: .3s;
+}
+header .img{
+  position: absolute;
+  width: 26rem;
+  top: -7rem;
+  left: -9rem;
+}
+#Language{
+  border: 1px solid var(--grey-color);
+  border-radius: var(--small-radius);
+  height: 2.5rem;
+  padding: 0 1rem ;
+  text-align: end;
+  margin-left: 1rem;
+  font-size: 17px;
+}
+#Language:focus{
+  border: 2px solid var(--secondary-color);
+}
+.hamburger {
+  display: none;
+  background-color: var(--third-color);
+  padding: .3rem .6rem;
+  border-radius: var(--small-radius);
+}
+.hamburger .bar {
+  display: block;
+  width: 1.5rem;
+  height: 3px;
+  margin: 5px 0;
+  transition: all 0.3s ease-in-out;
+  background-color: var(--white-color);
+}

@@ -1,0 +1,8 @@
+.brands .companies{
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    margin-top: 4rem;
+}
+.brands .companies img{
+    width: 20rem;
+}

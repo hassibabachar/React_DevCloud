@@ -1,0 +1,47 @@
+.contact_us{
+  margin-bottom: 6rem;
+}
+.contact_us .container{
+  display: flex;
+  flex-direction: row;
+  max-width: 85rem;
+}
+.contact_us .contact{
+  padding: 3rem;
+  width: 35%;
+}
+.contact_us .drop{
+  padding: 2rem;
+  width: 40%;
+}
+.contact_us .drop form .form{
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin: 1rem 0;
+}
+.contact_us .drop form .form input{
+  border: 1px solid var(--grey-color);
+  border-radius: var(--small-radius);
+  height: 2.5rem;
+  padding: 0 .5rem ;
+}
+.contact_us .drop form .form input:focus{
+  border: 2px solid var(--secondary-color);
+}
+.contact_us .drop .label{
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+  color: var(--primary-color);
+}
+.contact_us .drop form textarea{
+  border: 1px solid var(--grey-color);
+  border-radius: var(--small-radius);
+  height: 5rem;
+  padding: .5rem ;
+  margin-bottom: 1rem;
+}
+.contact_us .drop form textarea:focus{
+  border: 2px solid var(--secondary-color);
+}

@@ -1,0 +1,7 @@
+.LandingPage .container{
+    justify-content: center;
+  }
+  .LandingPage .image img{
+    width: 45rem;
+    height: 40rem;
+  }

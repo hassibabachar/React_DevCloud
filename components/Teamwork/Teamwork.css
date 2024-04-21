@@ -1,0 +1,15 @@
+.work{
+    display: flex;
+    margin-top: 4rem;
+    gap: 1rem;
+}
+.work .box{
+    display: flex;
+    width: 25rem;
+}
+.work .box img{
+    align-self: flex-start;
+}
+.work .content{
+    padding: 0 2rem 2rem 2rem;
+}

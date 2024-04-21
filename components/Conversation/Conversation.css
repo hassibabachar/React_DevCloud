@@ -1,0 +1,36 @@
+.conversation{
+    margin: 10rem 0 10rem 0;
+  }
+  .conversation .container{ 
+    background-image: url(../../public/assets/images/start-project-bg.svg);
+    background-position: center;
+    width: 100%;
+    max-width: 75rem;
+    height: fit-content;
+    border-radius: var(--border-radius);
+    padding: 2rem 0;
+  }
+  .conversation .title{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 3rem;
+  }
+  .conversation .title h1{
+    color: var(--white-color);
+    padding: 1rem;
+  }
+  .conversation .title p{
+    padding: .5rem;
+  }
+  .conversation .title button{
+    border-radius: var(--small-radius);
+    height: 2.7rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+    width: fit-content;
+    padding: 0 1rem ;
+    margin-top: 1rem;
+    background-color: var(--secondary-color);
+    color: var(--white-color);
+  }

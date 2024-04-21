@@ -1,0 +1,58 @@
+.footer {
+    background-image: url(../../public/assets/images/footer-bg.svg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    padding: 6rem 0 2rem 0;
+    margin-top: 4rem;
+}
+.footer .container {
+width: 100%;
+}
+.footer .container .allReferences{
+display: flex;
+flex-direction: column;
+width: 25rem;
+height: 20rem;
+}
+.footer .container .allReferences h2{
+color: var(--white-color);
+margin-bottom: 1rem;
+font-size: 1.7rem;
+}
+.footer .container .allReferences .references{
+display: flex;
+flex-direction: column;
+line-height: 1.6;
+}
+.footer .container .allReferences .references a{
+color: #eee;
+font-size: 1rem;
+transition: .3s;
+line-height: 2.5;
+}
+.footer .container .allReferences .references a:hover{
+text-decoration: underline;
+}
+.footer .container .allReferences .line {
+display: flex;
+align-items: center;
+color: var(--white-color);
+margin: 1rem 0 1rem 0;
+}
+.footer .container .allReferences .line i {
+color: var(--white-color);
+margin-right: 1rem;
+}
+.footer .container .allReferences .social {
+display: flex;
+gap: 2rem;
+}
+.footer .container .allReferences .social li a {
+color: var(--white-color);
+display: flex;
+font-size: 25px;
+}
+.footer .copyright {
+padding: 2rem 0 0 0;
+text-align: center;
+}

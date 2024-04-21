@@ -1,0 +1,81 @@
+.cards {
+    display: grid;
+    place-items: center;
+    margin-inline: 1.5rem;
+    padding-block: 5rem;
+  }
+  .cards .card{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3.5rem;
+  }
+  .cards .article {
+    position: relative;
+    overflow: hidden;
+  }
+  .cards .img {
+    width: 22rem;
+    height: 20rem;
+    border-radius: var(--border-radius);
+  }
+  .cards .content {
+    width: 18.5rem;
+    background-color: var(--white-color);
+    padding: 1.5rem 2rem;
+    box-shadow: 0 8px 24px hsla(0, 0%, 0%, .15);
+    border-radius:var(--border-radius);
+    position: absolute;
+    bottom: -9rem;
+    left: 0;
+    right: 0;
+    margin-inline: auto;
+    opacity: 0;
+    transition: opacity 1s 1s;
+  }
+  .cards .article:hover .content {
+    animation: show-data 1s forwards;
+    opacity: 1;
+    transition: opacity .3s;
+  }
+  .cards .article:hover {
+    animation: remove-overflow 2s forwards;
+  }
+  .cards .article:not(:hover) {
+    animation: show-overflow 2s forwards;
+  }
+  .cards .article:not(:hover) .content {
+    animation: remove-data 1s forwards;
+  }
+  @keyframes show-data {
+    50% {
+      transform: translateY(-10rem);
+    }
+    100% {
+      transform: translateY(-7rem);
+    }
+  }
+  @keyframes remove-overflow {
+    to {
+      overflow: initial;
+    }
+  }
+  @keyframes remove-data {
+    0% {
+      transform: translateY(-7rem);
+    }
+    50% {
+      transform: translateY(-10rem);
+    }
+    100% {
+      transform: translateY(.5rem);
+    }
+  }
+  @keyframes show-overflow {
+    0% {
+      overflow: initial;
+      pointer-events: none;
+    }
+    50% {
+      overflow: hidden;
+    }
+  }
